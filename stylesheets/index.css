@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.wrapper > div {
+    background: white;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+.wrapper > div:nth-child(odd) {
+    background-image: url("../Images/microwave.png");
+    background-size: 100% 100%;
+}
+
+
+img.microwave {
+    height: 100%;
+    width: 100%;
+}
+
+form{
+    text-align: center;
+}
+
+form > input  {
+    margin: 2%;
+    padding: 3%;
+    width: 80%;
+    background-color: lightgray;
+    border-radius: 3px;
+    color: black;
+}
+
+h1,h5{
+    margin-bottom: 5%;
+}
+
+.form{
+    margin-right: 10%;
+}
+
+.btn-register{
+    background-color: #FCCE01;
+    font-size: large;
+    width: 50%;
+    line-height: 100%;
+}
+
+.btn-register:hover{
+    background-color: #fcde00;
+}
+
+
+/* Required for Different Browsers */
+::placeholder {color: black; opacity: 1;}
+:-ms-input-placeholder {color: black;}
