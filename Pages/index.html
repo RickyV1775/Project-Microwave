@@ -30,16 +30,16 @@
 
         <!-- Right Box - Form -->
         <div class="form">
-            <form action="CreateAccount_PHP">
+            <form action="CreateAccount_PHP.php" method="post">
                 <h1>Create an Account</h1>
                 <h5> <a href="#">Already Have an Account?</a></h5>
-                <input id="fullname" type="text"
-                       placeholder="Full Name"><br>
-                <input id="email" type="text"
+                <input name="fullName" type="text"
+                       placeholder="First and Last Name"><br>
+                <input name="email" type="email"
                        placeholder="Email"><br>
-                <input id="password" type="password"
+                <input name="password" type="password"
                        placeholder="Password"><br>
-                <input id="verifypassword" type="password"
+                <input name="verifyPassword" type="password"
                        placeholder="Verify Password"><br>
                 <input type="submit" class="btn-register"
                        value="Sign Up">
