@@ -6,15 +6,13 @@
 
 .wrapper{
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 50% 50%;
 }
 
 .wrapper > div {
     background: white;
     padding: 1em;
     margin: 2em;
-    border-radius: 15px;
-    border-style: solid;
 }
 
 .wrapper > div:nth-child(odd) {
@@ -42,10 +40,6 @@ form > input  {
 
 h1,h5{
     margin-bottom: 5%;
-}
-
-.form{
-    margin-right: 10%;
 }
 
 .btn-register{
