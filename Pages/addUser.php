@@ -1,8 +1,7 @@
 <?php
 var_dump($_POST);
 session_start();
-$firstName = returnFirst($_POST['fullName']);
-$lastName = returnLast($_POST['fullName']);
+$fullName = $_POST['fullName'];
 $email = $_POST['email'];
 $pass = $_POST['password'];
 $conf = $_POST['verifyPassword'];
@@ -19,7 +18,7 @@ echo $pass;
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("CALL addUser( '".$firstName."', '".$lastName."', '".$email."', '".$pass."', '".$conf."')"  );
+    $stmt = $conn->prepare("CALL addUser( '".$fullName."', '".$email."', '".$pass."', '".$conf."'$$"  );
     $stmt->execute();
 
 
